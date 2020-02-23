@@ -1,0 +1,45 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "plugins": ["react", "react-hooks", "jsx-a11y", "prettier"],
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "prettier/prettier": "error",
+    "id-blacklist": [
+      "error",
+      "data",
+      "err",
+      "e",
+      "cb",
+      "callback",
+      "temp",
+      "obj",
+      "object"
+    ],
+    "no-console": "error",
+    "import/no-named-as-default-member": 0
+  },
+  "extends": [
+    "eslint:recommended",
+    "react-app",
+    "prettier"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx"]
+      }
+    }
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    }
+  }
+}

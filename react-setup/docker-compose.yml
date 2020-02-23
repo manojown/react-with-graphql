@@ -1,0 +1,11 @@
+version: "2" # specify docker-compose version
+
+# Define the services/containers to be run
+services:
+  react-app: #name of the second service
+    build: ./
+    volumes:
+      - ./:/usr/src/app
+    network_mode: host
+    restart: always
+    tty: true

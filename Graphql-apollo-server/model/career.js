@@ -41,7 +41,7 @@ var CareerSchema = new Schema({
 	fours: {
 		type: Number,
 	},
-	sexes: {
+	sixes: {
 		type: Number,
 	},
 	created: {
